@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srishti ❤️ Dhruv</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffe6f0, #ffd6e7);
+    text-align: center;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.counter {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo {
+    width: 250px;
+    height: 300px;
+    background: #ffc2d1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.love-section {
+    background: #fff0f5;
+}
+
+.proposal {
+    background: linear-gradient(to right, #ffccd5, #ff99c8);
+    color: #222;
+}
+
+footer {
+    padding: 30px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d6d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #e63950;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="your-song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Srishti ❤️ Dhruv</h1>
+    <p class="subtitle">Our Love Story — We love, we fight, but at the end of the day… it's always Us.</p>
+    <p class="counter" id="daysCounter"></p>
+</section>
+
+<!-- Timeline -->
+<section>
+    <div class="card">
+        <h2>21 February 2025</h2>
+        <p>The day we met. A normal day for the world, but the beginning of forever for us.</p>
+    </div>
+
+    <div class="card">
+        <h2>8 May 2025</h2>
+        <p>The day we chose each other. Not perfect. Not flawless. But real and full of love.</p>
+    </div>
+
+    <div class="card">
+        <h2>The Evil Eye Bracelet</h2>
+        <p>A small bracelet, but a big promise. Protection, positivity, and my silent prayer wrapped around your wrist, Dhruv.</p>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section>
+    <h2>Our Memories</h2>
+    <div class="gallery">
+        <div class="photo">Add Your Photo 1</div>
+        <div class="photo">Add Your Photo 2</div>
+        <div class="photo">Add Your Photo 3</div>
+    </div>
+</section>
+
+<!-- Love Section -->
+<section class="love-section">
+    <h2>Emotionally Married</h2>
+    <p style="max-width:700px;margin:auto;font-size:18px;">
+        We argue. We misunderstand. We get stubborn.
+        But we choose each other again and again.
+        That’s what makes this love powerful.
+    </p>
+</section>
+
+<!-- Proposal Section -->
+<section class="proposal">
+    <h2>Dhruv… Will You Keep Choosing Me Forever?</h2>
+    <p style="max-width:700px;margin:auto;font-size:18px;">
+        You are my calm, my chaos, my comfort, and my home.
+        I love you beyond ego, beyond fights, beyond everything.
+        <br><br>
+        I love you. Today. Tomorrow. Always.
+    </p>
+    <button onclick="showLove()">Click For A Surprise</button>
+    <p id="surprise" style="margin-top:20px;font-weight:500;"></p>
+</section>
+
+<footer>
+    Made with infinite love by Srishti for Dhruv ❤️ | Forever & Always
+</footer>
+
+<script>
+// Days Counter
+const startDate = new Date("February 21, 2025");
+const today = new Date();
+const difference = today - startDate;
+const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+document.getElementById("daysCounter").innerText =
+    "Together for " + days + " days and counting ♾️";
+
+// Surprise Button
+function showLove() {
+    document.getElementById("surprise").innerText =
+        "Dhruv, I will always choose you. In every fight, in every mood, in every lifetime. I love you endlessly. ❤️";
+}
+</script>
+
+</body>
+</html>
